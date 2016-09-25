@@ -1,6 +1,6 @@
-## Startup Shell Redesign 2015
+## Startup Shell Website
 
-Master branch is deployed to production automatically. 
+Master branch is deployed to production automatically.
 
 Install jekyll
 
@@ -8,9 +8,8 @@ Install jekyll
 
 Download repo
 
-`$ [sudo] git clone https://github.com/StartupShell/shell-2015.git`
+`$ [sudo] git clone https://github.com/StartupShell/web.git`
 
 Run locally
 
 `$ jekyll serve`
-
