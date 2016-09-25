@@ -1,6 +1,7 @@
 ## Startup Shell Website
 
-Master branch is deployed to production automatically.
+Master branch is no longer deployed to production automatically.
+Include [deploy: production] in your commit message to push changes live.
 
 Install jekyll
 
