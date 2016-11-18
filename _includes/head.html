@@ -3,6 +3,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- OpenGraph Meta (Includes Facebook) -->
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:title" content="Startup Shell" />
+  <meta property="og:description" content="Student-run incubator and coworking space dedicated to fostering entrepreneurship through collaboration." />
+  <meta property="og:image" content="https://startupshell.org/assets/full_facebook_whiteonred.png" />
+
+  <!-- Twitter Meta -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:site" content="@startup_shell" />
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
   <link rel="stylesheet" href="{{ "/css/main.css?v=2.1" | prepend: site.baseurl }}">
