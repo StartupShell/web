@@ -35,6 +35,25 @@ layout: default
       {% endfor %}
       </ul>
     </section>
+    <section class="venture-grid">
+      <p><h2>University Partners</h2></p>
+      <ul>
+      {% for univpartner in site.data.univpartners %}
+      	{% if univpartner.image %}
+        <li class="venture-item">
+          {% if univpartner.website %}<a href="{{ univpartner.website }}" target="_blank">{% endif %}
+            <img src="/assets/partners/logo_{{ univpartner.image }}.svg" alt="{{ univpartner.name }}">
+            <p>
+            {% if univpartner.status == "Grad" %}<span>Alumnus. </span>{% endif %}
+            {% if univparnter.status == "Exit" %}<span>Exited. </span>{% endif %}
+            {% if univpartner.description %}{{ univpartner.description }}. {% endif %}
+            </p>
+          {% if univpartner.website %}</a>{% endif %}
+        </li>
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </section>
 
   </div>
 
